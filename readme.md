@@ -127,7 +127,7 @@ When one class is commonly changed in different ways for different reasons.
 ### 6. Shotgun Surgery
 When every time you make a kind of change, you have to make a lot of little changes to a lot of different classes.
 ### 7. Feature Envy
-A method that seems more interested in a class other than the one it actually is in.
+A method that seems more interested in another class other than the one it actually is in.
 ### 8. Data Clumps
 Bunches of data(fields, parameters...) that hang around together.
 ### 9. Primitive Obsession
@@ -147,7 +147,7 @@ When a client asks one object for another object, which the client then asks for
 ### 16. Middle Man
 When an object delegates much of its functionality.
 ### 17. Inappropriate Intimacy
-When classes access to much to another classes.
+When classes access too much from other classes.
 ### 18. Alternative Classes with Different Interfaces
 Classes with methods that look to similar.
 ### 19. Incomplete Library Class
@@ -362,7 +362,7 @@ to
 * Using a temp for two different things is very confusing for the reader.
 
 ## 7. Remove Assignments to Parameters
-The code assign to a parameter
+The code assigns value(s) to parameter(s)
 ```java
 
 	int discount (int inputVal, int quantity, int yearToDate) {
@@ -378,8 +378,8 @@ to
 
 **Motivation**
 
-* You can change the internals of  object is passed but do not point to another object.
-* Use only the parameter to represent what has been passed.
+* You avoid changing the internals of the passed object
+* Use the parameter to only represent what has been passed.
 
 ## 8. Replace Method with Method Object
 You have a long method that uses local variables in such a way that you cannot apply Extract Method.
